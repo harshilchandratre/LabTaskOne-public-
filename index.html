@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+
         body {
             margin: 0;
-            padding: 0; 
+            padding: 0;
             box-sizing: border-box;
-            /* background-color: #9ED2C6; */
+            background-color: #9ED2C6;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .navbar {
-            background-color: antiquewhite;
+            background-color: #E9DAC1;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -42,24 +44,53 @@
         }
 
         .navlist a:hover {
-            background-color: rgb(255, 182, 86);
+            /* background-color: #ffbe4d; */
+            background-color: #ff5943;
+            color: white;
+            transition: 0.2s;
         }
-        .container{
-            margin-top: 20px;
+        #home_active{
+            background-color:  #ff5943;
+        }
+
+        .container {
+            margin-top: 70px;
             align-content: center;
-            padding: 25px;
+            margin: 90px;
         }
+
         /* h1{
             text-align: center;
         } */
-        .header{
+        .header {
             text-align: center;
         }
-        table{
+
+        #res_table {
+            border-collapse: collapse;
             width: 100%;
-            align-items: left;
-            padding: none;
-            border: none;
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid black; */
+            /* border-radius: 30px; */
+            overflow: hidden;
+        }
+
+        #res_table td, #res_table th {
+            /* border: 1px solid black; */
+        }
+
+        #res_table tr:nth-child(even) {
+            /* background-color: #f2f2f2; */
+            background-color: #54BAB9;
+        }
+
+        #res_table tr:hover {
+            /* background-color: #b4f3e4; */
+        }
+        img{
+            height: auto;
+            width: 160px;
         }
     </style>
     <title>Document</title>
@@ -68,7 +99,7 @@
 <body>
     <div>
         <ul class="navbar">
-            <li class="navlist"><a href="#home">Home</a></li>
+            <li class="navlist"><a href="#home" id="home_active">Home</a></li>
             <li class="navlist"><a href="#projects">Projects</a></li>
             <li class="navlist"><a href="#blog">Blog</a></li>
             <li class="navlist"><a href="#contact">Contact</a></li>
@@ -77,54 +108,57 @@
     <div class="container">
         <div class="header">
             <h1>Resume</h1>
-            <hr>
         </div>
 
-            <table width="100%" cellspacing="10vh" cellpadding="6vh" border="0">
-                <tr>
-                   <td colspan="2" width="50%"> <strong><font size="4">Harshil Chandratre</font></strong></td>
-                   <td  align="right" width="50%"><b>harshilchandratre22@gmail.com</b><br>9347349312<br><a href="https://github.com/harshilchandratre" target="_blank">GitHub</a></td>
-                </tr>
-                <tr>
-                    <td width="50%" colspan="3"><u><strong>Career Objective:-</strong></u>To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</td>
-                </tr>
-                <tr>
-                    <td width="50%" colspan="2"><strong>Education</strong></td>
-                    <td>May 2024<br>Parul University<br>Vadodara, Gujarat<br>BScIT, Full Stack Web/Dev.<br></td>
+        <table id="res_table" cellpadding="10px">
+            <tr>
+                <th colspan="2" width="50%">
+                    <font size="4">Harshil Chandratre</font>
+                </th>
+                <td align="right" width="50%">harshilchandratre22@gmail.com<br>9347349312<br><a
+                        href="https://github.com/harshilchandratre" target="_blank">GitHub</a></td>
+            </tr>
+            <tr>
+                <th width="50%" colspan="3"><u>Career Objective:-</u>To secure a challenging position in a reputable
+                    organization to expand my learnings, knowledge, and skills.</th>
+            </tr>
+            <tr>
+                <th width="50%" colspan="2">Education</th>
+                <td>May 2024<br>Parul University<br>Vadodara, Gujarat<br>BScIT, Full Stack Web/Dev.<br></td>
                 </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><strong>Experience</strong></td>
-                    <td>4+ Years of Corporate experience</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><strong>Skills</strong></td>
-                    <td>
-                        Java,JDBC,Servlets,JSP,MVC,JPA-Hibernate,Spring Frame Work,Spring Boot.<br>
-                        Front End:HTML CSS BootStrap,Java Script,Angular,React.<br>
-                        DataBases:Oracle,MySQL,Redis,Neo4J,MongoDB.<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><b>Full Stack Web/Dev</b></td>
-                    <td>Worked at maang company</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><b>Other Skills</b></td>
-                    <td>Trekking, Chess, Sketching, IE...</td>
-                </tr>
-                <tr>
-                    <td colspan="2"><b>DOB</b></td>
-                    <td>22<sup>nd</sup> December, 2002</td>
-                </tr>
-                <tr>
-                    <td colspan="3" align="center"><b>The above information is'nt true as this is a git project!</b></td>
-                </tr>
-                <tr>
-                    <td align="left">Place: Vadodara<br>Date: 19-11-2022</td>
-                    <td align="right" colspan="2">Signature</td>
-                </tr>
-            </table>
+            </tr>
+            <tr>
+                <th colspan="2">Experience</th>
+                <td>4+ Years of Corporate experience</td>
+            </tr>
+            <tr>
+                <th colspan="2">Skills</th>
+                <td>
+                    Java,JDBC,Servlets,JSP,MVC,JPA-Hibernate,Spring Frame Work,Spring Boot.<br>
+                    Front End:HTML CSS BootStrap,Java Script,Angular,React.<br>
+                    DataBases:Oracle,MySQL,Redis,Neo4J,MongoDB.<br>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">Full Stack Web/Dev</th>
+                <td>Worked at maang company</td>
+            </tr>
+            <tr>
+                <th colspan="2">Other Skills</th>
+                <td>Trekking, Chess, Sketching, IE...</td>
+            </tr>
+            <tr>
+                <th colspan="2">DOB</th>
+                <td>22<sup>nd</sup> December, 2002</td>
+            </tr>
+            <tr>
+                <th colspan="3" align="center">The above information could be somewhat true!</th>
+            </tr>
+            <tr>
+                <th align="left">Place: Vadodara<br>Date: 19-11-2022</th>
+                <td align="right" colspan="2"><img src="./img/signature.png" alt="signature"><br>Signature</td>
+            </tr>
+        </table>
     </div>
 
 </body>
