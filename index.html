@@ -17,7 +17,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #9ED2C6;
+            
+            background-color: #54BAB9;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
@@ -68,9 +69,9 @@
         /* h1{
             text-align: center;
         } */
-        .header {
+        /* .header {
             text-align: center;
-        }
+        } */
 
         #res_table {
             border-collapse: collapse;
@@ -80,23 +81,50 @@
             /* border: 1px solid black; */
             /* border-radius: 30px; */
             overflow: hidden;
+            box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+            z-index: 1;
         }
 
-        #res_table td, #res_table th {
-            /* border: 1px solid black; */
-        }
+        /* #res_table td, #res_table th {
+            box-shadow: 
+        } */
 
-        #res_table tr:nth-child(even) {
+        #res_table tr /*:nth-child(even)*/ {
             /* background-color: #f2f2f2; */
-            background-color: #54BAB9;
+            background-color: #9ED2C6;
         }
 
-        #res_table tr:hover {
+        /* #res_table tr:hover {
             /* background-color: #b4f3e4; */
-        }
+        /* } */ 
         img{
             height: auto;
             width: 160px;
+        }
+        .btn{
+            color: black;
+        }
+        .btn-outline-success{
+            border: none;
+            border-radius: 25px;
+            /* color: #E9DAC1; */
+            padding: 0.375rem 0.75rem;
+            
+        }
+        .btn-outline-success:hover{
+            background-color: #ff5943;
+        }
+        .btn-outline-success:hover:active{
+            background-color: #ff1e00;
+        }
+        .form-control{
+            border:none;
+            border-radius: 25px;
+        }
+        .form-control:hover:active{
+            border: none;
+            
+            
         }
     </style>
     <title>Document</title>
@@ -155,11 +183,14 @@
 
 
     <div class="container">
-        <div class="header">
+        <!-- <div class="header">
             <h1>Resume</h1>
-        </div>
+        </div> -->
 
-        <table id="res_table" cellpadding="10px">
+        <table id="res_table" cellpadding="10px" border="0px">
+            <tr>
+                <td colspan="3" width="50%" align="center"><h1>Resume</h1></td>
+            </tr>
             <tr>
                 <th colspan="2" width="50%">
                     <font size="4">Harshil Chandratre</font>
@@ -183,9 +214,13 @@
             <tr>
                 <th colspan="2">Skills</th>
                 <td>
-                    Java,JDBC,Servlets,JSP,MVC,JPA-Hibernate,Spring Frame Work,Spring Boot.<br>
+                    <!-- Java,JDBC,Servlets,JSP,MVC,JPA-Hibernate,Spring Frame Work,Spring Boot.<br>
                     Front End:HTML CSS BootStrap,Java Script,Angular,React.<br>
-                    DataBases:Oracle,MySQL,Redis,Neo4J,MongoDB.<br>
+                    DataBases:Oracle,MySQL,Redis,Neo4J,MongoDB.<br> -->
+                    <label for="skill1">HTML5</label>&nbsp;&nbsp;<progress id="skill1" value="80" max="100"></progress><br>
+                    <label for="skill2">CSS3</label>&nbsp;&nbsp;<progress id="skill2" value="50" max="100"></progress><br>
+                    <label for="skill3">Javascript</label>&nbsp;&nbsp;<progress id="skill3" value="35" max="100"></progress><br>
+                    <label for="skill4">Java Basics</label>&nbsp;&nbsp;<progress id="skill4" value="80" max="100"></progress><br>
                 </td>
             </tr>
             <tr>
